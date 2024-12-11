@@ -6,7 +6,7 @@ import numpy as np
 def main():
     st.title("Ethical-Artificial-Inteligence")
     menu = ["Home","About"]
-    choice = st.sidebar.secectbox("Menu",menu)
+    choice = st.sidebar.selectbox("Menu",menu)
     
     if choice == "Home":
         st.subheader("Approprietness")
