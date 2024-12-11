@@ -6,6 +6,10 @@ import pandas as pd
 import numpy as np
 
 
+def predict_on_input(input):
+    #call model here
+    result = input
+    return result
 
 def main():
     st.title("Ethical-Artificial-Inteligence")
@@ -21,7 +25,7 @@ def main():
 
         if submit_text:
             #process the text
-            output = raw_text
+            output = predict_on_input(raw_text)
             st.write(output)
         
     else:
