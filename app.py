@@ -13,7 +13,7 @@ def main():
         
         with st.form(key='myform'):
             raw_text = st.text_area("Input an argument here.")
-            submit_text = st.form_submit_button
+            submit_text = st.form_submit_button()
         
     else:
         st.subheader("About")
