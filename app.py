@@ -21,7 +21,7 @@ def main():
 
         if submit_text:
             #process the text
-            output = annotated_text(raw_text)
+            output = raw_text
             st.write(output)
         
     else:
