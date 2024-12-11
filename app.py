@@ -29,7 +29,7 @@ def main():
             #process the text
             output, result = predict_on_input(raw_text)
             if result:
-                st.warning("Inapprpriet")
+                st.warning("Inappropriet")
             else:
                 st.warning("Appropriet")
             st.text_area(label='Output',value=output,disabled=True)
