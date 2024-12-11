@@ -10,7 +10,7 @@ def predict_on_input(input):
     #call model here
     result = input
 
-    inappropriet = True
+    inappropriet = False
     return result, inappropriet
 
 def main():
