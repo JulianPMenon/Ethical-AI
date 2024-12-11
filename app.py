@@ -1,5 +1,5 @@
 #installs
-!pip install st-annotated-text
+
 #imports
 import streamlit as st
 import pandas as pd
