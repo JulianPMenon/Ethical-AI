@@ -26,8 +26,8 @@ def main():
         if submit_text:
             #process the text
             output = predict_on_input(raw_text)
-            with st.text_area(label='Output'):
-                st.write(output)
+            
+            st.text_area(output,disabled=True)
         
     else:
         st.subheader("About")
