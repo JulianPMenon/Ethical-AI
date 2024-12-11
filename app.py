@@ -2,6 +2,8 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+from annotated_text import annotated_text
+
 
 def main():
     st.title("Ethical-Artificial-Inteligence")
@@ -13,7 +15,12 @@ def main():
         
         with st.form(key='myform'):
             raw_text = st.text_area("Input an argument here.")
-            submit_text = st.form_submit_button()
+            submit_text = st.form_submit_button(label='Submit')
+
+        if submit_text:
+            #process the text
+            output = annotated_text(raw_text)
+            st.write(output)
         
     else:
         st.subheader("About")
