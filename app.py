@@ -31,7 +31,7 @@ def main():
             if result:
                 st.error("Inappropriet")
             else:
-                st.warning("Appropriet")
+                st.success("Appropriet")
             st.text_area(label='Output',value=output,disabled=True)
 
     else:
