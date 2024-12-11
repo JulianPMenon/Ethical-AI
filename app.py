@@ -9,7 +9,9 @@ import numpy as np
 def predict_on_input(input):
     #call model here
     result = input
-    return result
+
+    inappropriet = True
+    return result, inappropriet
 
 def main():
     st.title("Ethical-Artificial-Inteligence")
@@ -25,10 +27,13 @@ def main():
 
         if submit_text:
             #process the text
-            output = predict_on_input(raw_text)
-            
+            output, result = predict_on_input(raw_text)
+            if result:
+                st.warning("Inapprpriet")
+            else:
+                st.warning("Appropriet")
             st.text_area(label='Output',value=output,disabled=True)
-        
+
     else:
         st.subheader("About")
         
