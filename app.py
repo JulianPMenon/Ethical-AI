@@ -9,7 +9,7 @@ def main():
     choice = st.sidebar.selectbox("Menu",menu)
     
     if choice == "Home":
-        st.subheader("Approprietness")
+        st.subheader("Check an argument for thair Approprietness")
         
         with st.form(key='myform'):
             raw_text = st.text_area("Input an argument here.")
