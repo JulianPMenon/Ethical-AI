@@ -26,7 +26,7 @@ def main():
         if submit_text:
             #process the text
             output = predict_on_input(raw_text)
-            with st.form(key='output'):
+            with st.text_area():
                 st.write(output)
         
     else:
